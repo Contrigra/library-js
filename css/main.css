@@ -1,2 +1,73 @@
 
+* {
+  font-family: 'Helvetica', sans-serif;
+}
 
+body {
+  margin: auto;
+  max-width: 960px;
+}
+
+.site-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 24px 0;
+}
+
+nav {
+  margin-top: 32px;
+  line-height: 1.6rem;
+}
+
+
+.main-container {
+  margin-top: 64px;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-add-book {
+  padding: 16px 36px;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  transition: filter 0.15s ease-in-out;
+}
+
+.button-add-book:hover {
+  filter: brightness(90%);
+}
+
+.card-container {
+  margin: 32px 0;
+  display: grid;
+  border-top: 1px #E1E1E1 solid;
+}
+
+.card {
+  display: grid;
+  padding: 24px;
+  grid-template-columns: 37.5% 37.5% 12.5% 12.5%;
+  border-bottom: 1px #E1E1E1 solid;
+  align-items: center;
+}
+
+.card-title, .card-author {
+}
+
+.button-card {
+  justify-self: center;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #bbb;
+}
+
+/* TODO JS and dialogue window */
