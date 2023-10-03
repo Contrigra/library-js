@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -23,13 +24,34 @@
 <div class="main-container">
   <div class="button-container">
     <button class="button-add-book">New book</button>
+    <dialog>
+      <div class="dialog-container">
+        <div class="dialog-text">Add a new book</div>
+        <form>
+          <label>Title
+            <input type="text" name="title">
+          </label>
+          <label>Author
+            <input type="text" name='author'>
+          </label>
+          <label>Have read?
+            <input type="checkbox" id="isRead" name="isRead">
+          </label>
+          <div class="dialog-button-container">
+            <button type='submit' class="button-submit">Submit</button>
+            <button formmethod="dialog" class="button-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </dialog>
   </div>
 
 
   <div class="card-container">
     <div class="card">
       <div class="card-title">Lord Of the Rings</div>
-      <div class="card-author">J.R.R. Tolkien</div>
+      <div class="card-author ">J.R.R. Tolkien</div>
       <button class="button-card status-toggle">Read\Unread</button>
       <button class="button-card remove-card">Remove</button>
     </div>

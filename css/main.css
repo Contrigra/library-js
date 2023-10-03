@@ -70,4 +70,23 @@ nav {
   border: 1px solid #bbb;
 }
 
+dialog {
+  border: 3px solid #bbb;
+  border-radius: 16px;
+
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-text {
+  justify-self: center;
+}
 /* TODO JS and dialogue window */
