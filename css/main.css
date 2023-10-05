@@ -68,7 +68,9 @@ nav {
   background-color: #ffffff;
   border-radius: 16px;
   border: 1px solid #bbb;
+  width: 80px;
 }
+
 
 dialog {
   border: 3px solid #bbb;
@@ -89,4 +91,5 @@ dialog {
 .dialog-text {
   justify-self: center;
 }
-/* TODO JS and dialogue window */
+
+/* TODO dialogue window style */
