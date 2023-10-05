@@ -11,12 +11,11 @@ const myLibrary = [defaultData_1, defaultData_2];
 window.onload = (e) => {
     renderLibrary()
 }
-
+// preventDefault() prevented form data construction}
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     new FormData(form)
-}) // preventDefault() prevented form data construction})
-
+})
 // Create new book object, fill it with data and add it to the library
 form.addEventListener('formdata', (e) => {
     let data = e.formData.entries();
@@ -30,13 +29,10 @@ form.addEventListener('formdata', (e) => {
     myLibrary.push(book)
 
 
-    // removes all children
-
     renderLibrary()
     form.reset()
     dialog.close()
 });
-
 // Cancel button functionality
 cancelButton.addEventListener('click', (e) => {
     form.reset()
@@ -46,6 +42,7 @@ submitButton.addEventListener('click', () => console.log(form))
 newBookButton.addEventListener('click', () => dialog.showModal());
 
 const renderLibrary = () => {
+    // removes all children
     cardContainer.replaceChildren()
     for (let book of myLibrary) {
         renderCard(book)
@@ -87,7 +84,6 @@ const renderCard = (book) => {
     cardTitle.innerText = book.title;
     cardAuthor.innerText = book.author;
 }
-
 // renders status properties based on Book.isRead
 const statusButton_BoolCastToText = (book, statusButton) => {
     book.isRead === true ? statusButton.innerText = 'Read' : statusButton.innerText = 'Unread';
