@@ -83,9 +83,9 @@ class Controller {
 
 
 window.onload = () => {
-
     Controller.renderLibrary()
 }
+
 // preventDefault() prevented form data construction}
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -103,11 +103,11 @@ form.addEventListener('formdata', (e) => {
     }
     myLibrary.push(book)
 
-
     Controller.renderLibrary()
     form.reset()
     dialog.close()
 });
+
 // Cancel button functionality
 cancelButton.addEventListener('click', () => {
     form.reset()
